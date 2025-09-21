@@ -58,6 +58,12 @@ After deployment, Terraform will output:
 - `api_url` — your API Gateway endpoint
 - `api_key_value` — your API key (use in the `x-api-key` header)
 
+Note: If the `api_key_value` is hidden run:
+
+```sh
+terraform output api_key_value
+```
+
 ### 5. Test the API
 
 1. **Set Environment Variables**
