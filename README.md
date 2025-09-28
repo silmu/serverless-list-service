@@ -91,3 +91,26 @@ terraform output api_key_value
    Head endpoint test passed.
    Tail endpoint test passed.
    ```
+
+### Other useful commands
+
+Destroy deployed Terraform setup:
+
+```sh
+terraform destroy
+```
+
+Destroy with auto-approval (no confirmation prompt):
+
+```sh
+terraform destroy -auto-approve
+```
+
+Remove terraform state files:
+
+```sh
+rm -rf terraform.tfstate
+rm -rf terraform.tfstate.backup
+rm -rf .terraform.lock.hcl
+rm -rf .terraform/
+```
